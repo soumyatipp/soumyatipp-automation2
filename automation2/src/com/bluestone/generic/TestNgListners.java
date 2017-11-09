@@ -27,7 +27,7 @@ public class TestNgListners implements ITestListener,ISuiteListener, IInvokedMet
 
 	@Override
 	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-		// TODO Auto-generated method stub
+		System.out.println("code is running");
 		
 	}
 
