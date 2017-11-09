@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test name="firefoxTest">
+  <parameter name="node" value="https://10.10.14.119:4444/wb/hub"></parameter>
+    <parameter name="browser" value="firefox"></parameter>
+    <packages>
+      <package name="script"/>
+    </packages>
+  </test> <!-- Test -->
+   <test name="chromeTest">
+  <parameter name="node" value="https://10.10.14.119:4444/wb/hub"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <packages>
+      <package name="script"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
